@@ -1,13 +1,120 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  font-size: 45px;
+  color: azure;
+  font-weight: 600px;
+  text-shadow: 2px 2px 2px rgb(122, 122, 122);
+}
+
+header {
+  text-align: center;
+  padding: 2px;
+  background-color: rgb(0, 0, 44);
+}
+
+.app {
+  background: url(../src/images/background_1.jpg);
+  background-attachment: scroll;
+  min-height: 100vh;
+}
+
+.taskCardsArea {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.taskcard {
+  width: 250px;
+  padding: 10px 25px;
+  margin: 10px 1%;
+  background-color: lightgreen;
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px darkgreen;
+}
+
+.taskCardTitleArea {
+  margin-bottom: 10px;
+  width: 30%;
+  cursor: pointer;
+}
+
+.taskCardTitleInput {
+  width: 120px;
+  font-size: 1.1rem;
+  padding: 6px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+}
+
+.taskInput {
+  width: 100%;
+  font-size: 1.3rem;
+  padding: 6px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+}
+
+.taskbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px 0;
+  margin-top: 10px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px darkgreen;
+}
+
+.taskText {
+  margin-left: 10px;
+}
+
+.taskDeleteBtn {
+  margin-right: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.btnArea {
+  margin-left: 1%;
+  margin-top: 25px;
+}
+
+.addTaskCardBtn {
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-size: 30px;
+  background-color: lightgray;
+  box-shadow: 3px 3px 10px rgb(0, 69, 0);
+  outline: none;
+  cursor: pointer;
+  transition: all, .3s;
+}
+
+.addTaskCardBtn:hover {
+  transform: translate(3px,5px);
+  box-shadow: none;
+}
+
+.taskCardDeleteBtn {
+  border: none;
+  background-color: lightgreen;
+  cursor: pointer;
+  font-size: 23px;
+  color: darkred;
+}
+
+.taskHeader {
+  display: flex;
+  justify-content: space-between;
+
 }
